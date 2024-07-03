@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000814; /* Cor de fundo preto */
+    color: #e0e1dd; /* Cor do texto */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 18, 51, 0.9); /* Fundo azul escuro com transparência */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Borda arredondada */
+    position: relative; /* Para garantir que o z-index funcione */
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    color: #d4af37; /* Cor do título - dourado */
+}
+
+p {
+    text-align: justify;
+    color: #cccccc; /* Cor do texto do resumo - cinza claro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #d4af37; /* Cor das labels - dourado */
+}
+
+input, textarea, select {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d4af37; /* Borda dourada */
+    border-radius: 5px;
+    background-color: #001233; /* Cor de fundo dos inputs - azul escuro */
+    color: #e0e1dd; /* Cor do texto dos inputs */
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #d4af37; /* Borda dourada no foco */
+    box-shadow: 0 0 10px #d4af37;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #d4af37; /* Cor do botão - dourado */
+    color: #001233; /* Cor do texto do botão - azul escuro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffc107; /* Cor do botão ao passar o mouse */
+}
+
+/* Animação de fundo */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cobrir toda a largura */
+    height: 100%; /* Cobrir toda a altura */
+    z-index: -1; /* Colocar atrás do conteúdo */
+    background: url('fundo.jpg') center center / cover no-repeat; /* Substitua 'fundo.jpg' pela imagem do olho e binário */
+    animation: float 5s infinite ease-in-out;
+    opacity: 0.5;
+}

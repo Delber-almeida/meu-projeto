@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário: O Problema dos 3 Corpos</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>O Problema dos 3 Corpos</h1>
+        <p>"O Problema dos 3 Corpos" é uma série da Netflix baseada na famosa trilogia de ficção científica do autor chinês Liu Cixin. A história começa durante a Revolução Cultural Chinesa, quando um projeto militar secreto envia sinais ao espaço para estabelecer contato com alienígenas. Uma civilização alienígena à beira da destruição capta o sinal e planeja invadir a Terra. Agora, os cientistas da Terra devem enfrentar uma ameaça iminente enquanto lidam com questões políticas e sociais complexas.</p>
+
+        <form action="cadastra_form.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="avaliacao">Avaliação da Série (1 a 5 estrelas):</label>
+            <select id="avaliacao" name="avaliacao" required>
+                <option value="1">1 Estrela</option>
+                <option value="2">2 Estrelas</option>
+                <option value="3">3 Estrelas</option>
+                <option value="4">4 Estrelas</option>
+                <option value="5">5 Estrelas</option>
+            </select>
+
+            <label for="episodio">Episódio Favorito:</label>
+            <input type="text" id="episodio" name="episodio">
+
+            <label for="comentarios">Comentários sobre a Série:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <label for="personagem">Personagem Favorito:</label>
+            <input type="text" id="personagem" name="personagem">
+
+            <label for="gostaram">O que mais gostou na série?</label>
+            <textarea id="gostaram" name="gostaram" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
